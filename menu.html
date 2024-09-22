@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurante El Norteño</title>
+
+    <!-- Estilos CSS-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- link jQuery-->
+    <script src="jQuery/jquery-3.5.1.js"></script>
+
+    <!-- plugin jQuery validator-->
+    <script src="jQuery/jQuery-Form-Validator/form-validator/jquery.form-validator.min.js"></script>
+
+    <!-- links jQuery-UI para acordeón-->
+    <link rel="stylesheet" type="text/css" href="jQuery/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="jQuery/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" type="text/css" href="jQuery/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+
+    <script src="jQuery/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+    <!-- links javascript local-->
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+
+<div id="theme-selector">
+    <div id="to-green"></div>
+    <div id="to-red"></div>
+    <div id="to-blue"></div>
+</div>
+
+<section id="global">
+    <!-- Cabecera-->
+    <header>
+        <div id="logo">
+            <h1>EL <span style="color: yellow;">NORT</span><span style="color: red;">TEÑO</span></h1>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido-->
+    <section id="content">
+
+        <div id="box">
+            <section id="menu-list">
+                <h2>Nuestros Platos</h2>
+                <div class="plato" data-id="1" data-name="Ceviche" data-price="20.00">
+                    <img src="img/ceviche 2.jpg" alt="Ceviche" class="product-image">
+                    <h3>Ceviche</h3>
+                    <p>Precio: S/ 20.00</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+                
+                <div class="plato" data-id="2" data-name="Cabrito a la Norteña" data-price="35.00">
+                    <img src="img/cabrito 2.jpg" alt="Cabrito a la Norteña" class="product-image">
+                    <h3>Cabrito a la Norteña</h3>
+                    <p>Precio: S/ 35.00</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+                
+                <div class="plato" data-id="3" data-name="Arroz con Pato" data-price="30.00">
+                    <img src="img/arros 2.webp" alt="Arroz con Pato" class="product-image">
+                    <h3>Arroz con Pato</h3>
+                    <p>Precio: S/ 30.00</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+                
+                <div class="plato" data-id="4" data-name="Chicha Morada" data-price="5.00">
+                    <img src="img/chicha 2.webp" alt="Chicha Morada" class="product-image">
+                    <h3>Chicha Morada</h3>
+                    <p>Precio: S/ 5.00</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+                
+            </section>
+        </div>
+
+        <aside id="cart">
+            <h2>Carrito de compras</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: S/ <span id="total">0.00</span></p>
+            <button id="checkout">Finalizar compra</button>
+        </aside>
+
+        <div class="clearfix"></div>
+
+        <div align="center">
+            <a href="#" class="subir">Ir arriba</a>
+        </div>
+
+    </section>
+</section>
+<script src="js/menu.js"></script>
+
+<footer>
+    Restaurante EL NORTEÑO - Felix_Polo_Bentura_designer &copy; 
+    <div id="social-media">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+        <a href="https://www.instagram.com" target="_blank">Instagram</a> | 
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+    </div>
+</footer>
+
+</body>
+</html>

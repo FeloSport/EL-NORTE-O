@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante EL NORTEÑO</title>
+    <!-- Estilos CSS-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- links jQuery-->
+    <script src="jQuery/jquery-3.5.1.js"></script>
+
+    <!-- links jQuery slider-->
+    <link rel="stylesheet" type="text/css" href="jQuery/bxslider-4-4.2.12/dist/jquery.bxslider.css">
+    <script src="jQuery/bxslider-4-4.2.12/dist/jquery.bxslider.min.js"></script>
+
+    <!-- Moments.js - dar formato a la fecha -->
+    <script src="js/s"></script>
+
+    <!-- links javascript local-->
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+
+<div id="theme-selector">
+    <div id="to-green"></div>
+    <div id="to-red"></div>
+    <div id="to-blue"></div>
+</div>
+
+<section id="global">
+    <!-- Cabecera-->
+    <header>
+        <div id="logo">
+            <h1>EL <span style="color: yellow;">NORT</span><span style="color: red;">TEÑO</span></h1>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="about.html">Sobre nosotros</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Slider-->
+    <div id="slider">
+        <div><img src="img/arros con pato.png" alt="Plato típico 1"></div>
+        <div><img src="img/ceviche.jpg" alt="Plato típico 2"></div>
+        <div><img src="img/cabrito.png" alt="Plato típico 3"></div>
+    </div>
+
+    <!-- Contenido-->
+    <section id="content">
+        <aside id="sidebar">
+            <div id="about">
+                <h4><span>¿Quiénes somos?</span></h4>
+                <img src="img/Logo el norteño.jpeg" alt="Restaurante EL NORTEÑO">
+                <p>En EL NORTEÑO, ofrecemos los sabores auténticos del norte de Perú. Nuestros platos tradicionales están llenos de historia y pasión, con ingredientes frescos y una sazón inigualable. Ven y disfruta de nuestra especialidad, el famoso cabrito a la norteña y otros manjares que te transportarán al corazón del Perú.</p>
+            </div>
+
+            <div id="login">
+                <h4><span>Reserva tu mesa</span></h4>
+                <form>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="form_name"/>
+
+                    <label for="email">Correo</label>
+                    <input type="text" name="email" id="form_email"/>
+
+                    <label for="date">Fecha de reserva</label>
+                    <input type="date" name="date" id="form_date"/>
+                    <br><br>
+                    <label for="guests">Número de comensales</label>
+                    <input type="number" name="guests" id="form_guests" min="1" max="10"/>
+
+                    <input type="submit" value="Reservar"/>
+                </form>
+            </div>
+        </aside>
+
+        <div class="clearfix"></div>
+
+        <div align="center">
+            <a href="#" class="subir">Ir arriba</a>
+        </div>
+    </section>
+</section>
+
+<footer>
+    Restaurante EL NORTEÑO - Felix_Polo_Bentura_designer &copy; 
+    <div id="social-media">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+        <a href="https://www.instagram.com" target="_blank">Instagram</a> | 
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+    </div>
+</footer>
+
+</body>
+</html>
